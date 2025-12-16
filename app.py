@@ -1,10 +1,9 @@
 
 import streamlit as st
 import joblib
-from google.colab import files
 import numpy as np
 
-upload = files.upload()
+
 model = joblib.load('housing_price_model.pkl')
 st.title("House Price Prediction (Lakhs)")
 st.write("Enter the inputs and hit predict to get a estimated price for  your house!")
